@@ -5,9 +5,9 @@ public class UTS1A {
         String kodeBarang;
         String namaBarang;
         String quality;
-        int harga;
+        double harga;
         int jumlah;
-        int totalHarga;
+        double totalHarga;
 
 
         Scanner input = new Scanner(System.in);
