@@ -4,9 +4,8 @@ public class UTS1A {
 
         String kodeBarang;
         String namaBarang;
-        String quality;
+        int qty;
         double harga;
-        int jumlah;
         double totalHarga;
 
 
@@ -19,20 +18,19 @@ public class UTS1A {
         System.out.print("Masukan nama barang: ");
         namaBarang = input.nextLine();
 
-        System.out.print("Masukan quality barang: ");
-        quality = input.next();
+        System.out.print("Masukan qty barang: ");
+        qty = input.nextInt();
 
         System.out.print("Masukan harga barang: ");
         harga = input.nextInt();
 
-        System.out.print("Masukan jumlah : ");
-        jumlah = input.nextInt();
 
-        totalHarga = jumlah * harga;
+        totalHarga = qty * harga;
+        System.out.println();
 
         System.out.println("Kode barang: " + kodeBarang);
         System.out.println("Nama barang: " + namaBarang);
-        System.out.println("Quality: " + quality);
+        System.out.println("Qty: " + qty);
         System.out.println("Harga: " + harga);
         System.out.println("Total harga: " + totalHarga);
 
